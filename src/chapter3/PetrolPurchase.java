@@ -10,20 +10,9 @@ public class PetrolPurchase {
     public PetrolPurchase(String location, String petrolType, int quantity, double price, double discount) {
         this.location = location;
         this.petrolType = petrolType;
-
-        if(quantity > 0.00) {
-            this.quantity = quantity;
-        }
-
-        if(price > 0.00) {
-            this.price = price;
-        }
-
-
-            if(discount > 0.00) {
-                this.discount = discount;
-            }
-
+        this.quantity = quantity;
+        this.price = price;
+        this.discount = discount;
     }
 
     public void setLocation(String location) {
@@ -36,14 +25,17 @@ public class PetrolPurchase {
 
     public void setPetrolType(String petrolType) {
         this.petrolType = petrolType;
-    }
+        }
+
 
     public String getPetrolType() {
         return petrolType;
     }
 
     public void setQuantity(int quantity) {
-        this.quantity = quantity;
+        if (quantity > 0.00) {
+            this.quantity = quantity;
+        }
     }
 
     public double getQuantity() {
@@ -51,7 +43,9 @@ public class PetrolPurchase {
     }
 
     public void setPrice(double price) {
-        this.price = price;
+        if (price > 0.00) {
+            this.price = price;
+        }
     }
 
     public double getPrice() {
@@ -59,7 +53,9 @@ public class PetrolPurchase {
     }
 
     public void setDiscount(double discount) {
-        this.discount = discount;
+        if (discount > 0.00) {
+            this.discount = discount;
+        }
     }
 
     public double getDiscount() {
