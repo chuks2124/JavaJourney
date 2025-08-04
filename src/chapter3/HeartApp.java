@@ -24,7 +24,7 @@ public class HeartApp {
         int yearOfBirth = input.nextInt();
         HeartApp.setYearOfBirth(yearOfBirth);
 
-        System.out.printf("D.O.B: %.0f/%.0f/%.0f%n", HeartApp.getDayOfBirth(),HeartApp.getMonthOfBirth(), HeartApp.getYearOfBirth());
+        System.out.printf("D.O.B: %d/%d/%d%n", HeartApp.getDayOfBirth(),HeartApp.getMonthOfBirth(), HeartApp.getYearOfBirth());
 
         int A = 2025 - yearOfBirth;
         // A = Age

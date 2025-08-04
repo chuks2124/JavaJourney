@@ -34,7 +34,7 @@ public class HeartRates {
             this.dayOfBirth = dayOfBirth;
     }
 
-    public double getDayOfBirth() {
+    public int getDayOfBirth() {
         return dayOfBirth;
     }
     public void setMonthOfBirth(int monthOfBirth) {
@@ -42,7 +42,7 @@ public class HeartRates {
             this.monthOfBirth = monthOfBirth;
     }
 
-    public double getMonthOfBirth() {
+    public int getMonthOfBirth() {
         return monthOfBirth;
     }
     public void setYearOfBirth(int yearOfBirth) {
@@ -50,7 +50,7 @@ public class HeartRates {
             this.yearOfBirth = yearOfBirth;
     }
 
-    public double getYearOfBirth() {
+    public int getYearOfBirth() {
         return yearOfBirth;
     }
 }
