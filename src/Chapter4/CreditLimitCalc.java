@@ -19,7 +19,7 @@ public class CreditLimitCalc {
         System.out.println("Enter allowed credit limit");
         int limit = input.nextInt();
 
-        while (cust != "No") {
+        while (cust == "No") {
             double balance = (double) balance1 + charges - credits;
             customer += 1;
 
