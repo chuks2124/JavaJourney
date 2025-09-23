@@ -11,6 +11,7 @@ public class TrianglePrint {
                 for (int j = i; j <= 10; j++)
                     System.out.print('*');
                 System.out.println();
+
             }
 
         }
